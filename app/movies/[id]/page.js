@@ -61,14 +61,14 @@ const MovieDetails = async ({ params }) => {
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center space-x-4">
+            <div className="flex flex-wrap items-center justify-between">
               <p
                 className="text-lg w-[70%] float-left mb-3"
                 data-testid="movie-overview"
               >
                 {movie.overview}
               </p>
-              <div className="w-full">
+              <div>
                 <button className="flex flex-wrap items-center py-5 px-8 w-full justify-center mb-4 rounded border-none bg-rose-700 text-sm text-white gap-2">
                   <IoTicketSharp />
                   See Showtimes
@@ -80,7 +80,7 @@ const MovieDetails = async ({ params }) => {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center space-x-10 md:space-x-0">
+            <div className="flex flex-wrap items-center justify-between">
               <div className="">
                 <div className="text-base text-black">
                   <p className="gap-2">
@@ -114,7 +114,7 @@ const MovieDetails = async ({ params }) => {
                   </span>
                 </button>
               </div>
-              <div className="relative w-full mt-4">
+              <div className="relative mt-4">
                 <img
                   src="/Rectangle.png"
                   alt="Best Movies and Show September"

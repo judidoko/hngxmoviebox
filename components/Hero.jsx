@@ -25,7 +25,7 @@ const Hero = ({ results }) => {
             alt="banner"
             priority="true"
           />
-          <div className="absolute top-[20%] w-full p-4 md:p-8">
+          <div className="absolute top-[20%] w-full my-12 md:my-0 p-4 md:p-8">
             <h1 className="text-3xl font-bold md:text-5xl">
               {movie.title || result.name}
             </h1>
