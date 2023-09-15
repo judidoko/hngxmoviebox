@@ -1,0 +1,21 @@
+"use client";
+
+import { useEffect } from "react";
+
+const error = ({ error, reset }) => {
+  useEffect(() => {
+    console.log(error);
+  }, [error]);
+  return (
+    <>
+      <div className="text-center mt-10 bg-red-400">
+        <h1>Something went wrong, Not fetching data form Api properly.</h1>
+        <button className="hover:text-amber-600" onClick={() => reset()}>
+          Try Again
+        </button>
+      </div>
+    </>
+  );
+};
+
+export default error;
