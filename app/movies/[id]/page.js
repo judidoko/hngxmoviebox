@@ -18,8 +18,8 @@ const MovieDetails = async ({ params }) => {
   const movie = await res.json();
   return (
     <>
-      <div className="w-full flex flex-wrap h-screen p-2">
-        <Sidebar className="sm:none" />
+      <div className="w-full flex p-2">
+        <Sidebar />
         <div className="md:pt-8 md:w-8/12 flex-col items-center content-center max-w-6xl mx-auto md:space-x-6">
           <div className=" relative w-full flex items-center rounded-3xl justify-center">
             <div className="absolute h-full rounded-3xl w-full bg-gradient-to-t from-black"></div>
@@ -63,7 +63,7 @@ const MovieDetails = async ({ params }) => {
 
             <div className="flex flex-wrap items-center justify-between">
               <p
-                className="text-lg w-[70%] float-left mb-3"
+                className="text-lg w-auto lg:w-[70%] float-left mb-3"
                 data-testid="movie-overview"
               >
                 {movie.overview}
@@ -102,11 +102,11 @@ const MovieDetails = async ({ params }) => {
                     </span>
                   </p>
                 </div>
-                <button className="border-2 flex items-center border-gray-400 gap-3 mt-4 rounded">
-                  <span className="bg-rose-700 p-3 m-0 rounded border-none">
+                <button className="border-2 flex text-xs md:text-base items-center border-gray-400 mt-4 rounded">
+                  <span className="bg-rose-700 p-1 md:p-3 m-0 rounded border-none">
                     Top rated movie #65
                   </span>
-                  <span className="bg-white p-3 mr-10 rounded">
+                  <span className="bg-white p-1 md:p-3 mr-10 rounded">
                     Award 9 nominations
                   </span>
                   <span>
@@ -114,13 +114,13 @@ const MovieDetails = async ({ params }) => {
                   </span>
                 </button>
               </div>
-              <div className="relative mt-4">
+              <div className="relative w-full md:w-[40%] mt-4">
                 <img
                   src="/Rectangle.png"
                   alt="Best Movies and Show September"
                   className="w-full h-auto"
                 />
-                <button className="absolute flex items-center w-full bottom-0 bg-[#12121280] text-white p-2 rounded">
+                <button className="absolute flex items-center w-full bottom-0 bg-[#12121280] text-white text-sm p-2 rounded">
                   <BsListUl />
                   The Best Movies and Shows in September
                 </button>

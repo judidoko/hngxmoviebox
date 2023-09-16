@@ -16,7 +16,7 @@ const Footer = () => {
           <FaTwitter className="SocialMediumIcon" />
           <FaYoutube className="SocialMediumIcon" />
         </div>
-        <div className="flex flex-wrap items-center justify-center my-4 text-lg space-x-4 text-gray-900">
+        <div className="grid justify-items-center md:flex items-center justify-center my-4 text-lg md:space-x-4 text-gray-900">
           <Link href="#">Conditions of Use</Link>
           <Link href="#">Privacy & Policy</Link>
           <Link href="#">Press Room</Link>
